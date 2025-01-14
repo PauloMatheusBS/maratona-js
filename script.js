@@ -3,8 +3,17 @@ Descrição:
 Peça ao usuário dois números e exiba a soma deles.
 Tarefas:
 Crie uma função soma que receba dois números como parâmetros.
-Exiba o resultado no console ou em um alert.
+Exiba o resultado no console ou em um alert.*/
 
+// 1
+function soma() {
+    let num1 = parseFloat(document.getElementById("num1").value);   //se não altera a string sapoha ta concatenando
+    let num2 = parseFloat(document.getElementById("num2").value);
+    let resultado = num1 + num2;
+    alert("A soma é: " + resultado);
+}
+
+/*
 2. Verificação de Par ou Ímpar
 Descrição:
 Peça ao usuário um número e diga se ele é par ou ímpar.
@@ -12,7 +21,9 @@ Tarefas:
 Crie uma função que receba um número.
 Verifique se o número é divisível por 2.
 Exiba no console "O número é par" ou "O número é ímpar".
+*/
 
+/*
 3. Contagem de Números
 Descrição:
 Exiba os números de 1 a 10 usando um loop.
@@ -114,3 +125,6 @@ Tarefas:
 Use um loop para gerar os números pares.
 Adicione os números a um array e exiba-o no console.
 */
+
+
+
