@@ -39,7 +39,29 @@ Exiba os números de 1 a 10 usando um loop.
 Tarefas:
 Utilize um loop for para imprimir os números no console.
 Modifique o exercício para usar um while.
+*/
+function contar1() {
+    let resultado = "";
+    for (let i = 1; i <= 10; i++) {
+        resultado += i + "<br>";
+    }
+    document.getElementById("resultado1").innerHTML = resultado;
+}
 
+function contar2() {
+    let resultado = "";
+    let i = 1;
+    while (i <= 10) {
+        resultado += i + "<br>";
+        i++;
+    }
+    document.getElementById("resultado2").innerHTML = resultado;
+}
+
+
+
+
+/*
 4. Tabuada de um Número
 Descrição:
 Crie uma tabuada para um número informado pelo usuário.
