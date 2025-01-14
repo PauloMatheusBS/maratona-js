@@ -101,6 +101,7 @@ function encontrarMaior() {
     }
 
     console.log("O maior número da lista é: " + maior);
+    alert("O maior número da lista é: " + maior);
 }
 
 /*
@@ -116,7 +117,7 @@ Inverta a ordem com o método reverse e transforme novamente em string com join.
 function inverterPalavra() {
             let palavra = document.getElementById("palavra").value;
             let palavraInvertida = palavra.split("").reverse().join("");
-            document.getElementById("resultado").innerText = "Palavra invertida: " + palavraInvertida;
+            document.getElementById("resultado4").innerText = "Palavra invertida: " + palavraInvertida;
         }
 
 
@@ -134,6 +135,7 @@ function somaArray() {
     let numeros = [1, 2, 3, 4, 5];
     let soma = numeros.reduce((acc, num) => acc + num, 0);
     console.log("A soma dos elementos do array é: " + soma);
+    alert("A soma dos elementos do array é: " + soma);
 }
 
 /*
@@ -146,7 +148,7 @@ Verifique se ele é divisível apenas por 1 e por ele mesmo.
 Exiba "É primo" ou "Não é primo".
 */
 function verificarPrimo() {
-    let numero = parseInt(document.getElementById("numero").value);
+    let numero = parseInt(document.getElementById("num4").value);
     let primo = true;
 
     if (numero <= 1) {
@@ -160,7 +162,7 @@ function verificarPrimo() {
         }
     }
 
-    document.getElementById("resultado").innerText = primo ? "É primo" : "Não é primo";
+    document.getElementById("resultado5").innerText = primo ? "É primo" : "Não é primo";
 }
 /*
 9. Fatorial de um Número
@@ -170,7 +172,19 @@ Tarefas:
 Crie uma função que receba um número.
 Use um loop para multiplicar os números de 1 até o número informado.
 Exiba o resultado no console.
+*/
+function calcularFatorial() {
+    let numero = parseInt(document.getElementById("num6").value);
+    let fatorial = 1;
 
+    for (let i = 1; i <= numero; i++) {
+        fatorial *= i;
+    }
+
+    document.getElementById("resultado6").innerText = "Fatorial de " + numero + " é: " + fatorial;
+}
+
+/*
 10. Verificar Palíndromo
 Descrição:
 Verifique se uma palavra informada pelo usuário é um palíndromo (lê-se igual de trás para frente).
@@ -178,7 +192,18 @@ Tarefas:
 Crie uma função que receba uma string.
 Inverta a string e compare com o original.
 Exiba no console se a palavra é ou não um palíndromo.
+*/
+function verificarPalindromo() {
+    let palavra = document.getElementById("palavra2").value;
+    let palavraInvertida = palavra.split("").reverse().join("");
+    if (palavra === palavraInvertida) {
+        document.getElementById("resultado7").innerText = "A palavra é um palíndromo.";
+    } else {
+        document.getElementById("resultado7").innerText = "A palavra não é um palíndromo.";
+    }
+}
 
+/*
 11. Contar Vogais em uma Frase
 Descrição:
 Dada uma frase, conte o número de vogais.
