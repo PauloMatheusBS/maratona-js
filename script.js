@@ -198,8 +198,10 @@ function verificarPalindromo() {
     let palavraInvertida = palavra.split("").reverse().join("");
     if (palavra === palavraInvertida) {
         document.getElementById("resultado7").innerText = "A palavra é um palíndromo.";
+        console.log("A palavra é um palíndromo.")
     } else {
         document.getElementById("resultado7").innerText = "A palavra não é um palíndromo.";
+        console.log("A palavra não é um palíndromo.")
     }
 }
 
