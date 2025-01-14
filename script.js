@@ -22,6 +22,15 @@ Crie uma função que receba um número.
 Verifique se o número é divisível por 2.
 Exiba no console "O número é par" ou "O número é ímpar".
 */
+//2
+function parimpar() {
+    let numero3 = parseInt(document.getElementById("numero3").value);
+    if (numero3 % 2 === 0) {
+        alert("O numero é PAR");
+    } else {
+        alert("O numero é IMPAR");
+    }
+}
 
 /*
 3. Contagem de Números
