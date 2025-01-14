@@ -111,7 +111,16 @@ Tarefas:
 Crie uma função que receba uma string.
 Converta a string para um array com o método split.
 Inverta a ordem com o método reverse e transforme novamente em string com join.
+*/
 
+function inverterPalavra() {
+            let palavra = document.getElementById("palavra").value;
+            let palavraInvertida = palavra.split("").reverse().join("");
+            document.getElementById("resultado").innerText = "Palavra invertida: " + palavraInvertida;
+        }
+
+
+/*
 7. Soma de Elementos de um Array
 Descrição:
 Calcule a soma dos elementos de um array.
@@ -119,7 +128,15 @@ Tarefas:
 Crie um array como [1, 2, 3, 4, 5].
 Use um loop ou o método reduce para somar os valores.
 Exiba o resultado no console.
+*/
 
+function somaArray() {
+    let numeros = [1, 2, 3, 4, 5];
+    let soma = numeros.reduce((acc, num) => acc + num, 0);
+    console.log("A soma dos elementos do array é: " + soma);
+}
+
+/*
 8. Número Primo
 Descrição:
 Verifique se um número informado pelo usuário é primo.
@@ -127,7 +144,25 @@ Tarefas:
 Crie uma função que receba um número.
 Verifique se ele é divisível apenas por 1 e por ele mesmo.
 Exiba "É primo" ou "Não é primo".
+*/
+function verificarPrimo() {
+    let numero = parseInt(document.getElementById("numero").value);
+    let primo = true;
 
+    if (numero <= 1) {
+        primo = false;
+    } else {
+        for (let i = 2; i < numero; i++) {
+            if (numero % i === 0) {
+                primo = false;
+                break;
+            }
+        }
+    }
+
+    document.getElementById("resultado").innerText = primo ? "É primo" : "Não é primo";
+}
+/*
 9. Fatorial de um Número
 Descrição:
 Calcule o fatorial de um número informado pelo usuário.
