@@ -69,7 +69,10 @@ Tarefas:
 Peça ao usuário um número.
 Use um loop for para multiplicar o número de 1 a 10.
 Exiba o resultado no console.
+*/
 
+
+/*
 5. Encontrar o Maior Número em uma Lista
 Descrição:
 Dado um array de números, encontre o maior valor.
