@@ -71,13 +71,14 @@ Use um loop for para multiplicar o número de 1 a 10.
 Exiba o resultado no console.
 */
 function tabuada() {
-    let resultado = "";
+    let numero4 = parseInt(document.getElementById("num4").value); 
+    let resultado = ''; 
     let i = 1;
     while (i <= 10) {
-        num4 * i + "<br>";
+        resultado += numero4 + " x " + i + " = " + (numero4 * i) + "<br>"; 
         i++;
     }
-    document.getElementById("resultado3").innerHTML = resultado;
+    document.getElementById("resultado3").innerHTML = resultado; 
 }
 
 /*
@@ -88,7 +89,10 @@ Tarefas:
 Crie um array como [3, 7, 2, 9, 5].
 Use um loop para comparar os números e encontrar o maior.
 Exiba o maior número no console.
+*/
 
+
+/*
 6. Inverter uma Palavra
 Descrição:
 Peça ao usuário uma palavra e exiba-a invertida.
