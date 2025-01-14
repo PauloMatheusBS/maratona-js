@@ -213,7 +213,10 @@ Tarefas:
 Peça ao usuário uma frase.
 Use um loop para verificar cada caractere.
 Conte as vogais (a, e, i, o, u) e exiba o total.
+*/
 
+
+/*
 12. Gerar Números Aleatórios
 Descrição:
 Gere um número aleatório entre 1 e 100.
