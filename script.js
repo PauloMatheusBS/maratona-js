@@ -90,7 +90,18 @@ Crie um array como [3, 7, 2, 9, 5].
 Use um loop para comparar os números e encontrar o maior.
 Exiba o maior número no console.
 */
+function encontrarMaior() {
+    let numeros = [3, 7, 2, 9, 5];
+    let maior = numeros[0];
 
+    for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] > maior) {
+            maior = numeros[i];
+        }
+    }
+
+    console.log("O maior número da lista é: " + maior);
+}
 
 /*
 6. Inverter uma Palavra
